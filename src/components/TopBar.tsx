@@ -26,14 +26,20 @@ export default function TopBar() {
   }, [])
 
   return (
-    <div className="flex justify-between bg-black px-8 py-2 text-white text-sm">
+    <div className="flex justify-between bg-ctp-crust px-8 py-2 text-ctp-subtext1 text-sm border-b border-ctp-surface0">
       <p>{getFormattedDate()}</p>
-      <div className="flex gap-4">
-        <p>EUR {rates?.EUR.toLocaleString('hu-HU')} Ft</p>
-        <p>USD {rates?.USD.toLocaleString('hu-HU')} Ft</p>
+      <div className="flex gap-6">
+        <p className="flex items-center gap-1">
+          <span className="text-ctp-green">EUR</span>
+          <span>{rates?.EUR.toLocaleString('hu-HU')} Ft</span>
+        </p>
+        <p className="flex items-center gap-1">
+          <span className="text-ctp-green">USD</span>
+          <span>{rates?.USD.toLocaleString('hu-HU')} Ft</span>
+        </p>
         {weather && (
           <p className="flex items-center">
-            {weather.temp}°C
+            <span className="text-ctp-sky">{weather.temp}°C</span>
             <img 
               src={`https://openweathermap.org/img/wn/${weather.icon}.png`}
               alt="Weather icon"
