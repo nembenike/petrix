@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://petrix-backend-git-main-drinkmonsters-projects.vercel.app/api';
 
 export const getArticles = async (category?: string, page = 1) => {
   const params = new URLSearchParams({
