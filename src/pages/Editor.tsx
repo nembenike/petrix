@@ -13,11 +13,10 @@ interface ArticleForm {
 }
 
 const CATEGORIES = [
-  { id: 'kiemelt', label: 'Kiemelt', color: 'text-red-600' },
-  { id: 'itthon', label: 'Itthon', color: 'text-purple-600' },
-  { id: 'kulfold', label: 'Külföld', color: 'text-blue-600' },
-  { id: 'gazdasag', label: 'Gazdaság', color: 'text-green-600' },
-  { id: 'tech', label: 'Tech', color: 'text-orange-600' },
+  { id: 'tech', label: 'Tech', color: 'text-red-600' },
+  { id: 'kultura', label: 'Kultúra', color: 'text-purple-600' },
+  { id: 'sport', label: 'Sport', color: 'text-blue-600' },
+  { id: 'tarsadalom', label: 'Társadalom', color: 'text-green-600' },
 ]
 
 export default function Editor() {
